@@ -59,9 +59,6 @@ public class SongAdapter extends BaseAdapter {
         //get title and artist strings
         songView.setText(currSong.getTitle());
         artistView.setText(currSong.getArtist());
-        imageView.setImageURI(currSong.getCover());
-        android.media.MediaMetadataRetriever mmr = new MediaMetadataRetriever();
-        mmr.setDataSource(imageView,currSong.getCover());
         //set position as tag
         songLay.setTag(position);
         return songLay;
